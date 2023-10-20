@@ -94,3 +94,42 @@ main {
 footer {
     background-color: orange;
 }
+
+/*Media query for tablets - screen size 768px or wider*/
+@media screen and (min-width: 768px) {
+
+    /*Header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /*Main*/
+
+    main {
+        /*Push main down to accommodate larger navbar*/
+        margin-top: 79px;
+    }
+
+}
