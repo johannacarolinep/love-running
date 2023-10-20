@@ -3,8 +3,8 @@
 
 /* Asterisk wildcard selector to override browser default styling */
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -26,11 +26,15 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 }
 
 header a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 
 h1 {
@@ -46,7 +50,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu >li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -63,6 +67,19 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main content */
